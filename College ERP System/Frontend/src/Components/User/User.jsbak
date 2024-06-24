@@ -1,0 +1,77 @@
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import axios from "axios"
+import "./User.css"
+
+export default function User() {
+  const location = useLocation();
+  const { email, password } = location.state || {};
+  const[details, setDetails]=useState([ ]);
+ 
+  useEffect(() => {
+    localStorage.setItem('storeemail', JSON.stringify(email));
+    localStorage.setItem('storepassword', JSON.stringify(password));
+
+  }, []);
+
+  const [storeemail, setStoreEmail]=useState('')
+  const [storepassword, setStorePassword]=useState('')
+  useEffect(() => {
+        setStoreEmail(JSON.parse(localStorage.getItem('storeemail')))
+        setStorePassword(JSON.parse(localStorage.getItem('storepassword')))
+
+        if(email===undefined && password===undefined){
+          email=storeemail 
+          password=storepassword
+          }
+          else{
+            return email, password
+          }
+  }, []);
+   
+
+try{
+ 
+
+    axios.post("http://localhost:5001/getdata", {
+       email, password
+      
+      }).then(res => {
+        setDetails(res.data);
+        
+      }).catch(e=>{
+          alert("wrong details")
+          console.log(e);
+      })
+
+}
+catch(e){
+  alert("No User LoggedIn")
+}
+
+
+  return (
+    <div>
+     
+      <br></br>
+      <table>
+        <thead>
+          <tr>
+          <th>Email</th>
+          <th>Password</th>
+          </tr>
+        </thead>
+        <tbody>
+       {
+            details.map((detail)=>{
+              return <tr>
+               <td>{detail.email}</td>
+                <td>{detail.password}</td>
+              </tr>})                     
+    }
+        </tbody>
+      </table>   
+     
+    </div>
+  )
+}

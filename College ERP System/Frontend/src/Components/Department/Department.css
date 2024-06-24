@@ -1,0 +1,580 @@
+#dep-item{
+    padding: 5vh;
+}
+.dep-summary1, .dep-summary2{
+    width: fit-content;
+    margin: auto;
+}
+#dep {
+    display: flex;
+  width: fit-content;
+  margin: auto;
+  padding: 5vh;
+  min-height: 25px;
+}
+
+#dep div{
+    border-radius: 7px;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-bottom: 5vh;
+}
+
+/*BCA*/
+.bca-dep {
+    border: 1.5px solid #000000;
+    width: 300px;
+    height: fit-content;
+}
+
+.bca-dep h5 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: fit-content;
+
+}
+
+.bca-dep h5 .bca-p1 {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.bca-dep h5 .bca-p1:hover {
+    cursor: pointer;
+}
+
+.bca-dep h5 .bca-p2 {
+    display: none;
+    margin-left: 5px;
+}
+
+.bca-dep h5 .bca-p2:hover {
+    cursor: pointer;
+}
+
+.bca-dep-card {
+    text-align: center;
+    display: none;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#bca-long {
+    display: none;
+}
+
+#bca-short p {
+    color: skyblue;
+}
+
+#bca-short p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+#bca-long p {
+    color: skyblue;
+}
+
+#bca-long p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+/*BBA*/
+.bba-dep {
+    border: 1.5px solid #000000;
+    width: 300px;
+    height: fit-content;
+    margin-left: 5px;
+}
+
+.bba-dep h5 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: fit-content;
+
+}
+
+.bba-dep h5 .bba-p1 {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.bba-dep h5 .bba-p1:hover {
+    cursor: pointer;
+}
+
+.bba-dep h5 .bba-p2 {
+    display: none;
+    margin-left: 5px;
+}
+
+.bba-dep h5 .bba-p2:hover {
+    cursor: pointer;
+}
+
+.bba-dep-card {
+    text-align: center;
+    display: none;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#bba-long {
+    display: none;
+}
+
+#bba-short p {
+    color: skyblue;
+}
+
+#bba-short p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+#bba-long p {
+    color: skyblue;
+}
+
+#bba-long p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+
+/*B.Tech*/
+.btech-dep {
+    border: 1.5px solid #000000;
+    width: 310px;
+    height: fit-content;
+    margin-left: 5px;
+}
+
+.btech-dep h5 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: fit-content;
+
+}
+
+.btech-dep h5 .btech-p1 {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.btech-dep h5 .btech-p1:hover {
+    cursor: pointer;
+}
+
+.btech-dep h5 .btech-p2 {
+    display: none;
+    margin-left: 5px;
+}
+
+.btech-dep h5 .btech-p2:hover {
+    cursor: pointer;
+}
+/*CSE*/
+.cse-dep {
+    display: none;
+    border: 1.5px solid #000000;
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.cse-dep h5 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: fit-content;
+
+}
+
+.cse-dep h5 .cse-p1 {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.cse-dep h5 .cse-p1:hover {
+    cursor: pointer;
+}
+
+.cse-dep h5 .cse-p2 {
+    display: none;
+    margin-left: 5px;
+}
+
+.cse-dep h5 .cse-p2:hover {
+    cursor: pointer;
+}
+
+.cse-dep-card {
+    text-align: center;
+    display: none;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#cse-long {
+    display: none;
+}
+
+#cse-short p {
+    color: skyblue;
+}
+
+#cse-short p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+#cse-long p {
+    color: skyblue;
+}
+
+#cse-long p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+/*ECE*/
+.ece-dep {
+    display: none;
+    border: 1.5px solid #000000;
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.ece-dep h5 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: fit-content;
+
+}
+
+.ece-dep h5 .ece-p1 {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.ece-dep h5 .ece-p1:hover {
+    cursor: pointer;
+}
+
+.ece-dep h5 .ece-p2 {
+    display: none;
+    margin-left: 5px;
+}
+
+.ece-dep h5 .ece-p2:hover {
+    cursor: pointer;
+}
+
+.ece-dep-card {
+    text-align: center;
+    display: none;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#ece-long {
+    display: none;
+}
+
+#ece-short p {
+    color: skyblue;
+}
+
+#ece-short p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+#ece-long p {
+    color: skyblue;
+}
+
+#ece-long p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+
+
+/*ME*/
+.me-dep {
+    display: none;
+    border: 1.5px solid #000000;
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.me-dep h5 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: fit-content;
+
+}
+
+.me-dep h5 .me-p1 {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.me-dep h5 .me-p1:hover {
+    cursor: pointer;
+}
+
+.me-dep h5 .me-p2 {
+    display: none;
+    margin-left: 5px;
+}
+
+.me-dep h5 .me-p2:hover {
+    cursor: pointer;
+}
+
+.me-dep-card {
+    text-align: center;
+    display: none;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#me-long {
+    display: none;
+}
+
+#me-short p {
+    color: skyblue;
+}
+
+#me-short p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+#me-long p {
+    color: skyblue;
+}
+
+#me-long p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+/*EE*/
+.ee-dep {
+    display: none;
+    border: 1.5px solid #000000;
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.ee-dep h5 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: fit-content;
+
+}
+
+.ee-dep h5 .ee-p1 {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.ee-dep h5 .ee-p1:hover {
+    cursor: pointer;
+}
+
+.ee-dep h5 .ee-p2 {
+    display: none;
+    margin-left: 5px;
+}
+
+.ee-dep h5 .ee-p2:hover {
+    cursor: pointer;
+}
+
+.ee-dep-card {
+    text-align: center;
+    display: none;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#ee-long {
+    display: none;
+}
+
+#ee-short p {
+    color: skyblue;
+}
+
+#ee-short p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+#ee-long p {
+    color: skyblue;
+}
+
+#ee-long p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+/*CE*/
+.ce-dep {
+    display: none;
+    border: 1.5px solid #000000;
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.ce-dep h5 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    width: fit-content;
+
+}
+
+.ce-dep h5 .ce-p1 {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.ce-dep h5 .ce-p1:hover {
+    cursor: pointer;
+}
+
+.ce-dep h5 .ce-p2 {
+    display: none;
+    margin-left: 5px;
+}
+
+.ce-dep h5 .ce-p2:hover {
+    cursor: pointer;
+}
+
+.ce-dep-card {
+    text-align: center;
+    display: none;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#ce-long {
+    display: none;
+}
+
+#ce-short p {
+    color: skyblue;
+}
+
+#ce-short p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+#ce-long p {
+    color: skyblue;
+}
+
+#ce-long p:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+
+@media(max-width:1000px){
+    #dep-item{
+        padding: 75px;
+    }
+#dep{
+    display: inline;
+}
+#dep div{
+    margin: auto;
+    margin-bottom: 10px;
+}
+}
+
+@media(max-width:430px){
+    #dep-item{
+        padding: 10px;
+    }
+}
+
+@media(max-width:330px){
+    #dep-item{
+        padding: 3px;
+    }
+}

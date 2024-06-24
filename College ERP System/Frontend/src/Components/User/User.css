@@ -1,0 +1,96 @@
+#user-main{
+padding-top: 25px;
+}
+.updateform{
+    display: none;
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+table{
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+}
+
+th{
+    background-color: grey;
+    color: white;
+}
+
+td, th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 9px;
+}
+
+.table-headings{
+    margin-bottom:25px;
+    text-decoration: underline;
+}
+
+#admin-table-headings{
+    margin-top:25px;
+    width: fit-content;
+    margin: auto;
+}
+.attendance-board{
+    width: fit-content;
+    margin: auto;
+    background-color: navy;
+    border-radius: 5px;
+    color: white;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.attendance-board h3{
+    font-weight: 600;
+    text-decoration: underline;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+.attendance-board p a{
+    color: white;
+    }
+    .attendance-board  p a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: cyan;
+    }
+button{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+}
+.update{
+    background-color: green;
+    color: white;
+}
+
+.upload-files{
+    margin-left: 50vw;
+    margin-top: 25px;
+}
+
+.logout{
+    background-color: red;
+    color: white;
+    margin-left: 50vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media(max-width:975px){
+    table th, td{
+       padding: 3px;
+    }
+}
