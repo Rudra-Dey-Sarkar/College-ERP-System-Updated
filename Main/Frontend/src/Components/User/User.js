@@ -130,14 +130,14 @@ export default function User() {
 
  useEffect((e)=>{
   try {
-    axios.post("http://localhost:5001/getdata", {
+    axios.post("https://college-erp-system-updated.vercel.app/getdata", {
       email, password
     }).then(res => {
       setDetails(res.data);
       //for admin
       if (user === "admin") {
         try {
-          axios.get("http://localhost:5001/getsfdata", {
+          axios.get("https://college-erp-system-updated.vercel.app/getsfdata", {
           }).then(res => {
             let studentData = [];
             let facultyData = [];
@@ -161,7 +161,7 @@ export default function User() {
       //for student
       else if (user === "student") {
         try {
-          axios.get("http://localhost:5001/getsfdata", {
+          axios.get("https://college-erp-system-updated.vercel.app/getsfdata", {
           }).then(res => {
             let studentData = [];
             res.data.forEach(item => {
@@ -181,7 +181,7 @@ export default function User() {
       //for faculty
       else if (user === "faculty") {
         try {
-          axios.get("http://localhost:5001/getsfdata", {
+          axios.get("https://college-erp-system-updated.vercel.app/getsfdata", {
           }).then(res => {
             let facultyData = [];
             res.data.forEach(item => {
@@ -207,7 +207,7 @@ export default function User() {
     console.log("No User LoggedIn")
   }
 
-  axios.get('http://localhost:5001/download-attendance')
+  axios.get('https://college-erp-system-updated.vercel.app/download-attendance')
   .then(response => {
       setPdfs(response.data);
       console.log(pdfs)
@@ -226,7 +226,7 @@ export default function User() {
           <input type='text' placeholder='Tom Cruise' id='updateinput'></input>
           <button onClick={(e) => {
                          try {
-                            axios.put("http://localhost:5001/update", {
+                            axios.put("https://college-erp-system-updated.vercel.app/update", {
                              data: { email:emaildata, name:document.querySelector("#updateinput").value }
                            });
                          } catch (error) {
@@ -289,7 +289,7 @@ export default function User() {
                         console.log("test1" + detail2.email)
                         try {
                           console.log("test2" + detail2.email)
-                          const response = axios.delete("http://localhost:5001/delete", {
+                          const response = axios.delete("https://college-erp-system-updated.vercel.app/delete", {
                             data: { email: detail2.email }
                           });
                           console.log(response.data);
@@ -338,7 +338,7 @@ export default function User() {
                     <td>{detail3.password}</td>
                     <td><button className='delete' onClick={() => {
                       try {
-                        const response = axios.delete("http://localhost:5001/delete", {
+                        const response = axios.delete("https://college-erp-system-updated.vercel.app/delete", {
                           data: { email: detail3.email }
                         });
                         console.log(response.data);
@@ -399,7 +399,7 @@ export default function User() {
               <h3>Attendance</h3>
                {pdfs.map((pdf, index) => (
                     <p key={index}>
-                        <a href={`http://localhost:5001/download-attendance/${pdf}`} download>{pdf}</a>
+                        <a href={`https://college-erp-system-updated.vercel.app/download-attendance/${pdf}`} download>{pdf}</a>
                     </p>
                 ))}
             </div>
