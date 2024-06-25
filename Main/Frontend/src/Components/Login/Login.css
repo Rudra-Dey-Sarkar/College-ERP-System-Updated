@@ -1,0 +1,70 @@
+.login {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    position: relative;
+    width: 25vw;
+    height: auto;
+    background-color: #0d6efd;
+    border: 1px solid black;
+    padding-top:27px;
+    padding-bottom:27px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 9px;
+}
+
+.login label{
+    color: white;
+}
+
+.login label a{
+    color: cyan;
+}
+
+
+.inputs, .userselects {
+    width: auto;
+    height: 5vh;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+
+.userselects{
+font-size: 1rem;
+}
+
+.login-btn {
+    width: 70px;
+    height: 36px;
+    font-size: 1rem;
+    margin: auto;
+}
+
+.reg{
+    margin-top: 9px;
+    margin-bottom: 9px; 
+    display: inline;
+}
+
+.signuplink{
+    text-align: center;
+    margin-top: 25px;
+}
+
+@media(max-width:975px){
+    .login{
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@media(max-width:540px){
+    .login{
+        width: 75vw;
+        height: auto;
+    }
+
+}

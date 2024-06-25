@@ -1,0 +1,116 @@
+#homesec1{
+    padding: 5%;
+}
+.homesec1-div1{
+  display: inline;
+}
+#collegeheading{
+    margin-bottom: 5%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+.homesec1-div2{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+.slide-images{
+    width: 100%;
+}
+
+#img-slider-system{
+width: 55vw;
+}
+
+#notice-btn1{
+    margin-left: 5px;
+    text-decoration: none;
+    display: none;
+}
+
+#notice-btn2{
+    margin-left: 5px;
+    text-decoration: none;
+    display: none;
+}
+
+.homesec1-div2 .notice{
+    min-width:250px;
+    height: fit-content;
+    color: aliceblue;
+    margin-left: 45px;
+    padding: 5px;
+    background-color:navy;
+    border-radius: 5px;
+}
+
+.homesec1-div2 .notice h5{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    color: white;
+    font-weight: 600;
+}
+
+.noticeboard{
+    padding: 10px;
+    padding-right: 10px;
+    }
+
+.noticeboard p a{
+color: white;
+}
+
+.homesec1-div2 .notice .noticeboard p a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: cyan;
+}
+
+.homesec1-div3{
+    margin-top: 25px;
+}
+.homesec1-div3 h2{
+    margin-bottom: 25px;
+}
+
+.homesec1-div3 p{
+    font-size: large;
+}
+
+#home-new{
+    background-color: red;
+    color: green;
+}
+@media(max-width:750px){
+    .homesec1-div2{
+        display: inline;
+    }
+    #img-slider-system{
+        margin: auto;
+        width: 77%;
+    }
+    #notice-btn1{
+        display: flex;
+    }
+    .homesec1-div2 .notice{
+       width: 250px;
+       margin: auto;
+       margin-top: 25px;
+
+    }
+    .homesec1-div2 .notice .noticeboard{
+        display: none;
+        width: 250px;
+        
+    }
+}
+@media(max-width:540px){
+    .homesec1-div2{
+        width: 100%;
+    }
+    #img-slider-system{
+        width: 97%;
+    }
+}
