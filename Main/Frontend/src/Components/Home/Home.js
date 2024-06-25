@@ -101,7 +101,7 @@ export default function Home() {
     }
   }
   useEffect(() => {
-    axios.get('http://localhost:5001/download-notice')
+    axios.get('https://college-erp-system-updated.vercel.app/download-notice')
     .then(response => {
         setPdfs(response.data);
         console.log(pdfs)
