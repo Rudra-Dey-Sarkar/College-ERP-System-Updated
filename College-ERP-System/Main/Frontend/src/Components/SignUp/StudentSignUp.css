@@ -1,0 +1,35 @@
+ .userselects {
+    width: auto;
+    height: 25px;
+    margin-top: 9px;
+    margin-bottom: 9px; 
+}
+
+
+.stream, .genders{
+    display: grid;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.bcainputs, .bbainputs{
+    margin-left: 45px;
+}
+.cseinputs,.eceinputs{
+    margin-left: 50px;
+}
+.eeinputs{
+    margin-left: 59px;
+}
+.meinputs{
+    margin-left: 54px;
+}
+.ceinputs{
+    margin-left: 57px;
+}
+.maleinputs{
+    margin-left: 40px;
+    }
+.femaleinputs{
+margin-left: 25px;
+}
+

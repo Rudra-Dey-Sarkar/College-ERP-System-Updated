@@ -1,0 +1,74 @@
+header {
+    padding: 50px;
+   /* background-image:url("top.jpeg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+    background: rgb(11, 7, 236);
+
+background: linear-gradient(90deg, rgb(11, 7, 236) 0% ,rgb(40, 190, 250) 100%);
+
+background: -moz-linear-gradient(90deg, rgb(11, 7, 236) 0%, rgb(40, 190, 250) 100%);
+
+background: -webkit-linear-gradient(90deg, rgb(11, 7, 236)0%, rgb(40, 190, 250) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+}
+
+#logo{
+    padding: 5px;
+    height: 110px;
+    width: auto;
+    border: 1px solid white;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+.fonts{
+    margin-left: 45px;
+  }
+header h1 {
+    margin: auto;
+    font-size: 3.6rem;
+    color: white;
+    font-weight: bold;
+}
+span{
+    color: white;
+    font-weight:600;
+    font-size: 2rem;
+}
+
+@media(max-width:540px){
+    header{
+        display: grid;
+        padding: 5px;
+        height: auto;
+        width: auto;
+    }
+    #logo{
+        margin: auto;
+        height: 75px;
+        width: auto;
+    }
+    .fonts{
+        width: 100%;
+        margin: auto;
+      }
+      header h1 {
+        font-size: 1.5rem;
+        width: fit-content;;
+        margin: auto;
+    }
+    span{
+        font-size: 1rem;
+        margin-left: 10%;
+    }
+}
+
+@media(max-width:345px){
+    span{
+        font-size: 1rem;
+        margin-left: 5%;
+    }
+}

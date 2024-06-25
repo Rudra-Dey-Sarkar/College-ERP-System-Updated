@@ -1,0 +1,91 @@
+#course{
+    padding: 5vh;
+}
+
+.courseheading{
+    text-align: center;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.coursesummary{
+margin: auto;
+padding: 5vh;
+}
+
+.cards{
+    margin-top:10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.bcacard{
+    margin-right: 5vw;
+    text-align: center;
+}
+.bbacard{
+    text-align: center;
+    margin-right: 5vw;
+}
+.btechcard{
+    text-align: center;
+   
+}
+
+#bca{
+    padding: 5vh;
+}
+
+.bcaheading{
+    margin-bottom: 10vh;
+    font-weight: 600;
+}
+#bba{
+    padding: 5vh;
+}
+
+.bbaheading{
+    margin-bottom: 10vh;
+    font-weight: 600;
+}
+#btech{
+    padding: 5vh;
+}
+
+.btechheading{
+    margin-bottom: 10vh;
+    font-weight: 600;
+}
+@media(max-width:540px){
+    #course{
+        padding: 3%;
+    }
+
+    #bca{
+        padding: 3%;
+        text-align: center;
+    }
+    #bba{
+        padding: 3%;
+        text-align: center;
+    }
+    .courseheading{
+        margin-bottom: 3vh;
+    }
+    .bcaheading{
+        margin-bottom: 5vh;
+    }
+    .bbaheading{
+        margin-bottom: 5vh;
+    }
+    .cards{
+      display: inline;
+    }
+    
+    .bcacard, .bbacard, .btechcard{
+        margin: auto;
+        margin-top: 5%;
+    }
+
+}
