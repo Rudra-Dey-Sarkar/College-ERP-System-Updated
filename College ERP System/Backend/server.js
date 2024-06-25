@@ -4,8 +4,8 @@ const cors = require('cors');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
+
 //MongoDB Connection
-//mongodb://localhost:27017/ardent
 const dbURI = 'mongodb+srv://rudradeysarkar2002:Rudra9595@college-erp-system.2y8uzyb.mongodb.net/College-ERP-System?retryWrites=true&w=majority';
 mongoose.connect(dbURI,
     {
@@ -19,7 +19,11 @@ mongoose.connect(dbURI,
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+origin: [""],
+method: ["POST", "GET", "PUT", "DELETE"],
+credentials: true
+}));
 app.use(express.urlencoded({ extended: false }))
 
 const mydb = new mongoose.Schema({
