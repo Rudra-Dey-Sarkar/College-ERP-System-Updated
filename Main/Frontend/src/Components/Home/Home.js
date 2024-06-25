@@ -154,7 +154,7 @@ export default function Home() {
           <div className='noticeboard'>
                 {pdfs.map((pdf, index) => (
                     <p key={index}>
-                        <a href={`http://localhost:5001/download-notice/${pdf}`} download>{pdf}</a>
+                        <a href={`https://college-erp-system-updated.vercel.app/download-notice/${pdf}`} download>{pdf}</a>
                     </p>
                 ))}
           </div>
