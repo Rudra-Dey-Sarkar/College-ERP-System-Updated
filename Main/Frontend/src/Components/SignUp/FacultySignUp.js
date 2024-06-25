@@ -76,7 +76,7 @@ async function submit(e){
 
     try{
 
-        await axios.post("http://localhost:5001/signup",{
+        await axios.post("https://college-erp-system-updated.vercel.app/signup",{
           name,email,password,user,streamordep,gender
         })
         .then(res=>{
