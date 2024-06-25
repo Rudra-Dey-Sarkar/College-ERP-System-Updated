@@ -20,7 +20,7 @@ mongoose.connect(dbURI,
 const app = express();
 app.use(express.json());
 app.use(cors({
-origin: [""],
+origin: ["https://college-erp-system-update-git-9a3b61-rudra-dey-sarkars-projects.vercel.app"],
 method: ["POST", "GET", "PUT", "DELETE"],
 credentials: true
 }));
