@@ -43,7 +43,7 @@ function FacultyLogin() {
   async function submit(e){
       e.preventDefault();
       try{
-          await axios.post("http://localhost:5001/login",{
+          await axios.post("https://college-erp-system-updated.vercel.app/login",{
             user,email,password
           })
           .then(res=>{
