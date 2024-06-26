@@ -20,7 +20,7 @@ mongoose.connect(dbURI,
 const app = express();
 app.use(express.json());
 app.use(cors({
-origin: ["https://college-erp-system-updated-frontend.vercel.app"],
+origin: ["https://college-erp-system-updated-frontend.vercel.app/"],
 method: ["POST", "GET", "PUT", "DELETE"],
 credentials: true
 }));
