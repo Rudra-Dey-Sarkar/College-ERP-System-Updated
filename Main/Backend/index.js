@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 //MongoDB Connection
-const dbURI = 'mongodb+srv://rudradeysarkar2002:Rudra9595@college-erp-system.2y8uzyb.mongodb.net/College-ERP-System?retryWrites=true&w=majority';
+const dbURI = process.env.MONGODB_URI ||'mongodb+srv://rudradeysarkar2002:Rudra9595@college-erp-system.2y8uzyb.mongodb.net/College-ERP-System?retryWrites=true&w=majority';
 mongoose.connect(dbURI,
     {
         useNewUrlParser: true,
