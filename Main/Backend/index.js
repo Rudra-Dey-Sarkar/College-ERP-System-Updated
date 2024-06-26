@@ -19,12 +19,33 @@ mongoose.connect(dbURI,
 
 const app = express();
 app.use(express.json());
-app.use(cors({
+/*app.use(cors({
     origin: ["https://college-erp-system-updated-frontend.vercel.app"], // Add your frontend URL here
     methods: ["POST", "GET", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
+}));*/
+
+const allowedOrigins = [
+    "https://college-erp-system-updated-frontend.vercel.app",
+    "https://college-erp-system-updated-frontend.vercel.app/adminlogin",
+    "https://college-erp-system-updated-frontend.vercel.app/studentlogin",
+    "https://college-erp-system-updated-frontend.vercel.app/facultylogin"
+];
+
+app.use(cors({
+    origin: (origin, callback) => {
+        if (allowedOrigins.includes(origin) || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    methods: ["POST", "GET", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
 }));
+
 
 app.use(express.urlencoded({ extended: false }));
 
