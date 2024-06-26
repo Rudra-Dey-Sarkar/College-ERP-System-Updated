@@ -177,7 +177,7 @@ app.get("/getsfdata", (req, res) => {
 })
 
 //vercel check 
-app.post("/", (req, res) => {
+app.get("/", (req, res) => {
         res.json("vercel connected")
 })
 
