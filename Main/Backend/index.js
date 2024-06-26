@@ -20,11 +20,11 @@ mongoose.connect(dbURI,
 const app = express();
 app.use(express.json());
 app.use(cors({
-origin: ["https://college-erp-system-updated-frontend.vercel.app/"],
-method: ["POST", "GET", "PUT", "DELETE"],
-credentials: true
+    origin: ["https://college-erp-system-updated-frontend.vercel.app"], // Add your frontend URL here
+    methods: ["POST", "GET", "PUT", "DELETE"],
+    credentials: true
 }));
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: false }));
 
 const mydb = new mongoose.Schema({
     user: String,
