@@ -25,6 +25,7 @@ app.use(cors({
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
 }));
+
 app.use(express.urlencoded({ extended: false }));
 
 const mydb = new mongoose.Schema({
