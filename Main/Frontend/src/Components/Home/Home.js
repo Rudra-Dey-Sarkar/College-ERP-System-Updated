@@ -107,7 +107,7 @@ export default function Home() {
         console.log(pdfs)
     })
     .catch(error => {
-        console.error('Error fetching the PDF list', error);
+        console.log('Error fetching the PDF list', error);
     });
     navcheck();
   }, [])
