@@ -174,8 +174,11 @@ app.get("/getsfdata", (req, res) => {
     catch (e) {
         res.json("fail")
     }
+})
 
-
+//vercel check 
+app.get("", (req, res) => {
+        res.json("vercel connected")
 })
 
 //signup
