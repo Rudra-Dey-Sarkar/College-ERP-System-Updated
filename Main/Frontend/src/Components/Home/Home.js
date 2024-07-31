@@ -115,7 +115,7 @@ export default function Home() {
  async function test(){
     text = document.getElementById("testSend").value;
 
-await axios.post("https://college-erp-system-updated.vercel.app/login",{
+await axios.post("https://college-erp-system-updated.vercel.app/test",{
               text
           })
           .then(res=>{
