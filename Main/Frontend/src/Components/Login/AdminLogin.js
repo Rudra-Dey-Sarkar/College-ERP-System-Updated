@@ -132,6 +132,7 @@ function AdminLogin() {
   const [user, setUser]=useState('')
   async function submit(e){
       e.preventDefault();
+    //https://college-erp-system-updated.vercel.app/login
       try{
           await axios.post("https://college-erp-system-updated.vercel.app/login",{
               user,email,password
