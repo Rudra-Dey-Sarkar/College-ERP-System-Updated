@@ -111,9 +111,27 @@ export default function Home() {
     });
     navcheck();
   }, [])
+
+  function test(){
+    text = document.getElementById("testSend").value;
+
+await axios.post("https://college-erp-system-updated.vercel.app/login",{
+              text
+          })
+          .then(res=>{
+               alert(res.data)
+          }).catch(e=>{
+            alert("no data received in backend")
+            console.log(e);
+        })
+    
+  }
+  
   return (
     <div>
       <section id='homesec1'>
+       <input type="text" id="testSend">
+       <button onclick="test()">Test<button>
         <h1 id='collegeheading'>ERP System For College</h1>
         <div className='homesec1-div1'>
           <div className='homesec1-div2'>
