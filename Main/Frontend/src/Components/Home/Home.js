@@ -130,8 +130,6 @@ await axios.post("https://college-erp-system-updated.vercel.app/test",{
   return (
     <div>
       <section id='homesec1'>
-       <input type="text" id="testSend">
-       <button onclick="test()">Test</button>
         <h1 id='collegeheading'>ERP System For College</h1>
         <div className='homesec1-div1'>
           <div className='homesec1-div2'>
