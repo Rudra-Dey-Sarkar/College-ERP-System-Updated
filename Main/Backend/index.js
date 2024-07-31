@@ -41,19 +41,6 @@ const mydb = new mongoose.Schema({
 const collection = mongoose.model('collection', mydb);
 
 
-//test 
-app.post("/test", async (req, res) => {
-    const { text } = req.body
-
-    try {
-            res.json("data received :- ",text)
-    }
-    catch (e) {
-        res.json("fail")
-    }
-})
-
-
 //File Upload For Notice
 const storage1 = multer.diskStorage({
     destination: function (req, file, cb) {
