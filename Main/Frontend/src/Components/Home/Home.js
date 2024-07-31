@@ -112,7 +112,7 @@ export default function Home() {
     navcheck();
   }, [])
 
-  function test(){
+ async function test(){
     text = document.getElementById("testSend").value;
 
 await axios.post("https://college-erp-system-updated.vercel.app/login",{
