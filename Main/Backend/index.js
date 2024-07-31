@@ -20,8 +20,8 @@ mongoose.connect(dbURI,
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["https://college-erp-system-updated-frontend.vercel.app"], // Add your frontend URL here
-  //  origin: true,
+    //origin: ["https://college-erp-system-updated-frontend.vercel.app"], // Add your frontend URL here
+    origin: true,
     methods: ["POST", "GET", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
@@ -39,6 +39,20 @@ const mydb = new mongoose.Schema({
 
 })
 const collection = mongoose.model('collection', mydb);
+
+
+//test 
+app.post("/test", async (req, res) => {
+    const { text } = req.body
+
+    try {
+            res.json("data received :- ",text)
+    }
+    catch (e) {
+        res.json("fail")
+    }
+})
+
 
 //File Upload For Notice
 const storage1 = multer.diskStorage({
