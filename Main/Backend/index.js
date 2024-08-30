@@ -21,7 +21,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     origin: '*',
-    optionsSuccessStatus: 200
+    optionsSuccessStatus: 200,
     methods: ["POST", "GET", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
@@ -125,7 +125,11 @@ app.get('/download-attendance/:filename', (req, res) => {
     });
 });
 
-
+////////////////////////////////////////////////////////////////////////////////////
+app.get("/", (req, res)=>{
+res.json("Working")
+})
+////////////////////////////////////////////////////////////////////////////////////
 
 //login
 app.post("/login", async (req, res) => {
