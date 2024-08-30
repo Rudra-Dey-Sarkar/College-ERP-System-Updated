@@ -20,8 +20,8 @@ mongoose.connect(dbURI,
 const app = express();
 app.use(express.json());
 app.use(cors({
-    //origin: ["https://college-erp-system-updated-frontend.vercel.app"], // Add your frontend URL here
-    origin: true,
+    origin: '*',
+    optionsSuccessStatus: 200
     methods: ["POST", "GET", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
