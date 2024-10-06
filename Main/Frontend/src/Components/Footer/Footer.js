@@ -16,7 +16,7 @@ function Footer() {
       </div>
       </div>
     
-    <p>&#169; 2024 Rudra Dey Sarkar</p> 
+    <p> &#169; 2024 Rudra Dey Sarkar </p> 
   </footer>
   </div>
   )
